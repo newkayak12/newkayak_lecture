@@ -1,6 +1,6 @@
-package com.ex.run;
+package first.com.ex.run;
 
-public class Test {
+public class FirstTest {
 
 	public static void main(String[] args) {
 		System.out.println( " ÀÌ¸§ : ±è»óÇö ");
