@@ -10,6 +10,8 @@ public class PrintTest {
 		double height = 171.1;
 		double weight = 70.2;
 		char gender= 'M';
+		
+		
 		System.out.println("System.out.print();의 사용 : ");
 		System.out.print(name);
 		System.out.print(age);
@@ -64,9 +66,8 @@ public class PrintTest {
 		System.out.printf("%10s %d\n", "장연재", 21);
 		System.out.printf("%-10s %10d\n", "김상현", 29);
 //		소수점 표시에 대해서 설정할 수 있다.
-		System.out.println();
-		System.out.println();
-		System.out.println();
+		System.out.println("\n\n\n\n");
+		
 		
 		System.out.printf("소수점 다섯 자리까지 출력 : %f\n", height);
 		System.out.printf("소수점 두 자리까지 출력 : %.2f\n", height);
@@ -81,8 +82,40 @@ public class PrintTest {
 //	printf로 
 //		나는 000이고, 나이는 00이고, 성별은 0, 키는 00, 몸무게는 00.0 입니다.
 		System.out.printf(" 이름은 %s입니다.  나이는 %d입니다.  키는 %.2f입니다.  몸무게는 %.3f입니다.  성별은 %c 입니다.\n\n", name,age,height,weight,gender);
-//		개행을 하
+//		개행을 하는 경우
 		System.out.printf(" 이름은 %s입니다. \n 나이는 %d입니다. \n 키는 %.2f입니다. \n 몸무게는 %.3f입니다. \n 성별은 %c 입니다.\n", name,age,height,weight,gender);
+	
+	
+	
+	//escape문 = 특정 기능을 수행하는 문자 리터럴
+		
+		System.out.println("-------------------");
+//		\t는 일정 간격의 띄어쓰기
+		String msg = "안녕     하세요 ";
+		System.out.println(msg);
+//		/t : 탭 참고로 탭은 space 5칸이다.
+		msg = "안녕\t하셨쎄요?";
+		System.out.println(msg);
+//		/n : 개
+		msg = "안녕\n하셨쎄요?";
+		System.out.println(msg);
+//		/' : ' html5할 때 씁니다.
+		msg = "\'안녕하셨쎄요?\'";
+		System.out.println(msg);
+//		/" : " html5할 때 씁니다.
+		msg = "\"안녕하셨쎄요?\"";
+		System.out.println(msg);
+//		'//' = '/'
+		msg = "\\안녕하셨쎄요/?";
+		System.out.println(msg);
+//		경로 관련해서 C:'\'Users'\'user1를 쓰고 싶을 때 아래와 같이 쓴다.
+//		
+		String path = "C:\\Users\\user1";
+		System.out.println(path);
+
+		////////////////     변수 사용은 여기까지... ///////////////////
+		/////////////// 변수 활용은 또 다른 얘기지...///////////////
+
 	}
 
 }
