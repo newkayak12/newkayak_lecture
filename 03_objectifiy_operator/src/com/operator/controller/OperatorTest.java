@@ -179,7 +179,6 @@ System.out.println();
 //				된다! char타입은 숫자로 저장해주니까
 //				심지어 이것도 된다.
 				System.out.println('A'<'B');
-				
 
 				
 			}
@@ -231,12 +230,141 @@ System.out.println();
 //					int ls3 = msg.hashCode();
 //					System.out.println(ls2);
 //					System.out.println(ls3);
-//					
+
+
+					
+//					문자열이 동일하다면       : "".equals();
+//					문자열이 동일하지 않으면?  : !"".equals();
+//					System.out.println( "동등비교를 부정한다. ");
+//					System.out.println(!id.equals("admin");)
+//				
+//					문자열(객체)을 제외한 동등비교부정 (!= (일치 하지 않지?))
+//					eg) int num1 = 20;
+//						int num2 = 30;
+//							System.our.println( num1 !=num2 );
+
 		}
 			
 			
 //		과제 : -,/,% 메소드 만들기
 //			: 입력한 값이 20보다 큰지 확인하는 메소드
 //			: 입력받은 값이 영어 대문자인지 확인하는 메소
-	
+			
+			
+			public void boundaryCheck() {
+//				10대라고 하면 수학적으로 어떻게 표현할까? 
+//				10≦ x ≦ 19 10보다  : 크거나 같고 19보다 작거나 같다.
+//				9 < x < 20		  : 9 초과 20미만이다. 	
+//				근데 컴퓨터는 이런 표현 방법이 없다.
+//				그러면 어떡해?? 9 < x  '이고' x<20이면 되겠네 ?
+//				그러면 그 '이고'는 어떡해??  = 일반 논리 연산자를 사용한다!
+				
+//				AND(A&&B) > A,B 모두 true일 때
+//				OR (A||B) > A 혹은 B가 true일 떄
+				
+				String name = "김상현", addr="구로구" , name2 = "홍서연", addr2 = "구로구";
+				
+				System.out.println(name.equals("김상현")&& addr.equals("구로구"));
+				System.out.println(name2.equals("김상현")&&addr2.equals("구로구"));
+			}
+			
+			public void ageBoundn() {
+				
+//				나이가 20대인 사람을 구하시오
+//				 20 <= age <= 29 ( 20과 29 둘다 포함)
+				int age = 29;
+				System.out.println( 20<=age && age<=29 );
+			
+				if(20<=age && age <= 29) {
+					System.out.println("아직 젊어요!!!!");
+				}
+//				아이디가 admin 패스워드가 1234이면
+//				id, password 입력받아처리
+				
+				
+				
+			}				
+			
+			public void idCheck() {
+				Scanner sc = new Scanner(System.in);
+				System.out.print("id : ");
+				String id = sc.next();
+				System.out.print("passwd : ");
+				String pss = sc.next();
+				int psswd;
+				psswd = Integer.parseInt(pss);
+//				parseInt사용
+				
+//				if(id.equals("admin") && psswd == 1234) {
+//					System.out.println("login success");
+//				} else {
+//					System.out.println("login failure");
+//				}
+//				❉ if
+				
+				String result = (id.equals("admin") && psswd == 1234)? "longin" : "fail";
+				System.out.println(result);
+//				❉ 삼항 연산자 사 
+				
+			}
+			
+			
+			
+//			나이 10대이면서 여성
+			public void youFemale() {
+				Scanner sc = new Scanner(System.in);
+				System.out.print( "input your age : ");
+				int age = sc.nextInt();
+				System.out.print( "input your gender : (male/female) ");
+				char gen = sc.next().charAt(0);
+				
+				System.out.println((age>=10&& age<=19)&& (gen=='f') );
+				
+			}
+			
+
+			
+//			입력 받은 주소지가 경기도나 강원도인 사람
+			public void addr( ) {
+				Scanner sc = new Scanner(System.in);
+				System.out.print(" your address ? : ");
+				String adr = sc.next();
+				System.out.println((adr.equals("경기도")) || (adr.equals("강원도") ));
+			}
+			
+			
+			
+			
+//			사는 곳이 광주 혹은 서울이고 나이가 30대이면서 남자
+			public void livein( ) {
+				Scanner sc = new Scanner(System.in);
+					System.out.print("지역 : ");
+				String adr = sc.next();
+					System.out.print("나이 : ");
+				int age = sc.nextInt();
+					System.out.print("성별 : ");
+				char gen = sc.next().charAt(0);
+				boolean re, re1, re2;
+				
+				re = (adr.equals("광주")||adr.equals("서울"));
+				re1 = (age>=30 && age<40);
+				re2 = (gen=='남');
+				
+				System.out.println(re&&re1&&re2);
+				
+//				연산자의 순서 
+//				&&가 || 보다 높기 때문
+//				{adr.equals("광주")||adr.equals("서울")&&age>=30 && age<40&&gen=='남'}
+//				이러면 연산 결과가 이상해 진다!!!
+//				따라서!  괄호로 우선연산처리를 해야할 경우 그렇게 하도록 합시다. 
+//				"||"가 "&&"랑 같이 쓰일 떄는 특히 주의!!!!!!
+				
+			}
+			
+			
+			
+			
+			
+			
+
 }
