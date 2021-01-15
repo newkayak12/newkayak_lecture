@@ -21,7 +21,9 @@ public class Main {
 //		cond.nestedIfTest();	
 		
 	ConditionController_switch cnd = new ConditionController_switch();
-		cnd.switchTest();
+//		cnd.switchTest();
+//		cnd.breakTest();
+		cnd.breakt2();
 		
 	}
 

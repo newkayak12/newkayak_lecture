@@ -72,8 +72,54 @@ public class ConditionController_switch {
 }
 	
 	
-//	> 남은 switch에서 배울 것 
+//	 
 //	break;
+	
+//	만약 break;가 없다면???????????
+	
+	
+	
+	public void breakTest( ) {
+			System.out.println("============= MENU =============");
+			System.out.println( " 1. Pasta");
+			System.out.println( " 2. Sandwich");
+			System.out.println( " 3. Pizza");
+			System.out.println( " 4. Fried chicken");
+		int choice = scn.nextInt();
+			
+			switch (choice) {
+			
+				case 1 : System.out.println("Italian");
+				case 2 : System.out.println("American");
+				case 3 : System.out.println("Italian Food");
+				case 4 : System.out.println("American Food");
+						break;
+				default : System.out.println("please choose number in menu ");
+						break;
+			}
+	}
+//break;가 없으니까 계속 읽어 내려감... 내가 원하는 일이 아닌데???
+//그래서 하나의 케이스만 실행하고 그만두고 싶으면 break;를 꼭 작성해줄 필요가 있다...
+	
+	
+	public void breakt2 () {
+			System.out.println("오늘의 점심메뉴는???");
+			System.out.println(" 1. 마라탕 2. 피자 3. 짬뽕 4.돈까스");
+		int cho = scn.nextInt();
+			switch (cho) {
+				case 1 : 
+					System.out.println("마라탕 매워!");
+					new ConditionController_if().ifTest();
+					new OtherTest().test(); // 다른 클래스에 있는 객체 호출
+					switchTest();  // 같은 클래스 내부에 있는 객체 호출
+					break;
+				
+				case 2 : System.out.println("진짜 먹고싶네 갑자기 ㅋㅋ");
+				case 3 : System.out.println("얼큰하니 좋지 ㅋㅋ");
+				case 4 : System.out.println("돈까스~");
+				
+			}
+	}
 	
 
 }
