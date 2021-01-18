@@ -279,4 +279,39 @@ public class RepeatController {
 //	1. 한 번만 실행
 //	2. 입력한 수 만큼 쓸 수 있는 계산기
 	
+	
+	public void calc () {
+			System.out.print("how many times do you use? : ");
+		int count = scn.nextInt();
+			for(int i =0; i<count; i++) {
+					System.out.print("first num : ");
+				int num1 = scn.nextInt();
+					System.out.print("operator : ");
+				String op = scn.next();
+					System.out.print("second num : ");
+				int num2 = scn.nextInt();
+					
+	caclc:			switch (op) {
+					
+						case "+" :
+							System.out.println(num1+" + "+num2+" = "+ (num1 + num2));
+							break;
+						case "-" :
+							System.out.println(num1+" - "+num2+" = "+ (num1 - num2));
+							break;
+						case "*" :
+							System.out.println(num1+" * "+num2+" = "+ (num1 * num2));
+							break;
+						case "/" :
+							System.out.println(num1+" / "+num2+" = "+ (num1 / num2));
+							break;
+						default : 
+							System.out.println("invalid operator");
+							break caclc;
+							
+					}
+			}
+	}
+	
+	
 }
