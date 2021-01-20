@@ -16,9 +16,9 @@ public class Main {
 //		arr.arrOrder();
 //		arr.tenArray();
 //		arr.randomTest();
-//		arr.lottery();
+		arr.lottery();
 //		arr.ranNum();
 //		arr.anotherRandom();
-		arr.copyArray();
+//		arr.copyArray();
 	}
 }

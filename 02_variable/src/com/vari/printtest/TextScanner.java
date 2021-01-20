@@ -51,7 +51,5 @@ public class TextScanner {
 //		 유니코드로 형변환
 		 System.out.println((int) key);
 
-		 
 	}
-
 }
