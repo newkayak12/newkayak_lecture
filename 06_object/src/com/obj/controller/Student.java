@@ -9,7 +9,7 @@ public class Student {
 	public  String name, add ;
 	public int age, cla, cla2;
 	public double hei;
-	
+	public static String test;
 	
 	{
 		name="Kim Sang Hyeon";
@@ -19,6 +19,10 @@ public class Student {
 		cla2=4;
 		hei = 170.1;
 		
+	}
+	
+	static {
+//		test = name+add;
 	}
 	
 //	초기화 블록은 좀 신기하긴 하다??
