@@ -1,13 +1,12 @@
 package com.obj.main;
 
-import com.obj.controller.Animal;
 import com.obj.controller.BasicObjTest;
 //import com.obj.controller.DefaultTest;
 // The type com.obj.controller.DefaultTest is not visible
 // 열람 불가
 import com.obj.controller.FieldTest;
 import com.obj.controller.InitBlockTest;
-import com.obj.controller.Student;
+import com.obj.controller.*;
 
 //import com.obj.controller.Test;
 // The import com.obj.controller.Test cannot be resolved
@@ -132,7 +131,7 @@ public class Run {
 				
 				System.out.println();
 				System.out.println("stu3");
-				Student stu3 = new Student("kim", "seoul", 26);
+			Student stu3 = new Student("kim", "seoul", 26);
 				System.out.println(stu3.name);
 //				이렇게 쓰면 된다... 오버로드된 녀석을 불러오기 때문
 //				안 넣은 값은 초기화 블록에서 초기화 된 녀석으로 가져온다.
@@ -155,6 +154,11 @@ public class Run {
 //			만약 클래스에 매개변수 있는 생성자를 만들고 default생성자를 만들지 않으면 어떻게 될까??
 				
 //				default를 jvm이 안 만들겠지!!!!!!!
+				
+				
+				
+				
+				
 	}
 
 }
