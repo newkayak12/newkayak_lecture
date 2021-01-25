@@ -1,8 +1,6 @@
-package test_ex02_obj.studentmanage.model.vo;
+package test_ex02_obj2.studentmanage.model.vo;
 
-import test_ex02_obj.studentmanage.model.dao.StudentDao;
-
-public class Student  {
+public class Student {
 	
 // 객체의 저장
  private String name, address, school;
