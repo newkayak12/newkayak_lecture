@@ -6,10 +6,13 @@ import test_ex02_obj2.studentmanage.view.Mainview;
 public class Run {
 
 	public static void main(String[] args) {
-		StudentController stucon = new StudentController();
+//		StudentController sc=new StudentController();
+//		sc.mainMenu(sc);
 		
 		
-				stucon.mainMenu();
+	new StudentController().mainMenu();
+		
+		
 				
 	}
 

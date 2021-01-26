@@ -5,7 +5,6 @@ import java.util.Scanner;
 import test_ex02_obj.studentmanage.controller.StudentController2;
 import test_ex02_obj.studentmanage.model.dao.StudentDao2;
 import test_ex02_obj.studentmanage.model.vo.Student2;
-import test_ex02_obj.studentmanage.wrongnumberexception.WrongNumberException;
 
 public class Mainview2 {
 	// 메인화면 호출	
@@ -108,5 +107,7 @@ public class Mainview2 {
 					
 				}
 		}
+		
+		
 			
 	}
