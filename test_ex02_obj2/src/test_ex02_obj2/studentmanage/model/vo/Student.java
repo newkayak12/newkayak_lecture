@@ -92,7 +92,11 @@ public void setCode(int code) {
 }
 
 	 
- 
+ @Override
+	public String toString() {
+	 
+	 return name+"\t"+age+"\t"+address+"\t"+school+"\t"+kor+"\t"+eng+"\t"+math+"\t"+code+"\n";
+	}
  
  
 }

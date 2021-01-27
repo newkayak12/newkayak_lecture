@@ -3,7 +3,7 @@ package test_ex02_obj2.studentmanage.view;
 import java.util.Scanner;
 
 import test_ex02_obj2.studentmanage.controller.StudentController;
-import test_ex02_obj2.studentmanage.model.dao.StudentDao;
+import test_ex02_obj2.studentmanage.model.dao.StudentDao_old;
 import test_ex02_obj2.studentmanage.model.vo.Student;
 
 public class Mainview {
