@@ -16,6 +16,17 @@ public class Student {
 	}
 	
 	
+	
+	public Student(String name, String address, String school, int age) {
+		super();
+		this.name = name;
+		this.address = address;
+		this.school = school;
+		this.age = age;
+	}
+
+
+
 	public Student() {
 		// TODO Auto-generated constructor stub
 	}
@@ -100,6 +111,11 @@ public class Student {
 		this.swift = swift;
 	}
 	
-	
+	@Override
+	public String toString() {
+		
+		
+		return name+"\t"+age+"\t"+school+"\t"+address+"\t"+java+"\t"+c+"\t"+python+"\t"+swift+"\n";
+	}
 	
 }

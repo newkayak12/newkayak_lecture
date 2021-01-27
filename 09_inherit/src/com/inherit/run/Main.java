@@ -71,7 +71,7 @@ public class Main {
 //			super();
 			
 			
-//			부모에서 멤버변수가 private으로 선언되어있으면 상속관계라도 직접접근이 불가능하다. 
+			
 		
 	}
 
