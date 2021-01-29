@@ -1,6 +1,6 @@
 package com.inherit.model.vo;
 
-import com.inherit.run.Person;
+import com.inherit.model.vo.inherited.Person;
 
 public class Student extends Person{
 	
@@ -95,7 +95,7 @@ public class Student extends Person{
 	
 	
 	
-		return super.getName()+"\n"+super.getAge()+"\n"+super.getGender()+"\n"+grade+"\n"+group+"\n"+number;
+		return super.getName()+"\n"+super.getAge()+"\n"+super.getGender()+"\n"+grade+"\n"+group+"\n"+number+"\n"+email;
 //		String으로 만들어줬지? int랑 String을 더하면 String이 되니까
 //		super()는 생성자/ super은 부모클래스의 주소값 
 //		name으로 쓰면 The field Person.name is not visible 즉, private
@@ -112,4 +112,36 @@ public class Student extends Person{
 //		
 		
 		}
+	
+		@Override
+		public void print() { //선언부는 부모메소드와 동일하게작성한다. 
+			super.print();	// 오로지 로직부분만 내용을 다르게 해서 사용한다.
+			System.out.println(" "+grade+" "+group+" "+number);
+//			System.out.println(super.getName()+" "+super.getAge()+" "+super.getGender()+" "+grade+" "+group+" "+number);
+//			이렇게 써도 되는 부분이고
+		}
+	
+//	이렇게 오버라이드하면 우선순위가 자식객체의 메소드가 우선이 된다. 
+		
+		
+		
+		
+		
+		
+		@Override
+//		어떤 내용을 동일하다 판단할지 결정
+			public boolean equals(Object obj) {
+				if(this == obj) {
+					return true;
+				}
+				else if(obj instanceof Student) {
+					Student other = (Student) obj;
+					if(super.getName().equals(other.getName())&& grade == other.grade) {
+						return true;	
+					}
+					
+				}
+				
+				return false;
+			}
 }
