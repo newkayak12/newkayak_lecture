@@ -36,7 +36,7 @@ public class Main {
 		
 		
 //		 헐??????
-//		인터페이스는 자체 생서이 안된다면서 왜 되는거야??
+//		인터페이스는 자체 생성이 안된다면서 왜 되는거야??
 //		new MakeBurger()  / new MakeBurger[3];
 		
 		
