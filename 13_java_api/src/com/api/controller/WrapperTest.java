@@ -49,7 +49,7 @@ public class WrapperTest {
 		System.out.println(Integer.MAX_VALUE);
 		System.out.println(Integer.MIN_VALUE);
 		System.out.println(obj);
-//		Integer는  직접근이 가능하다. 
+//		Integer는  직접접근이 가능하다. 
 //		int 는 기본자료형이라 직접접근이 X
 		
 		

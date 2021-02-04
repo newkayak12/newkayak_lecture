@@ -4,7 +4,8 @@ package test_ex02_obj2.studentmanage.model.dao;
 import test_ex02_obj2.studentmanage.model.vo.Student;
 
 public class StudentDao {
-	private Student [] students  = new Student[5];
+	private Student [] students  = new Student[3];
+	private static int studentIndex =0;
 	
 	
 	
@@ -15,15 +16,32 @@ public class StudentDao {
 	
 	
 	public boolean insertStudent(Student s) {
-		boolean flag = false;
-		for(int i =0; i<students.length; i++)	{
-				if(students[i]==null) {
-					students[i] =s;
-					flag =true;
-					break;
-	
-				}
+		boolean flag = true;
+		
+		try {
+			students[studentIndex]=s;
+			studentIndex++;
+		} catch (ArrayIndexOutOfBoundsException e) {
+			Student[] temp = new Student[students.length+5];
+			System.arraycopy(students, 0, temp, 0, students.length);
+			studentIndex = students.length;
+			students = temp;
+			temp = null;
+			students[studentIndex]=s;
+			studentIndex++;
 		}
+		
+//	분석할 가치는 있지?
+		
+		
+//		for(int i =0; i<students.length; i++)	{
+//				if(students[i]==null) {
+//					students[i] =s;
+//					flag =true;
+//					break;
+//	
+//				}
+//		}
 		
 		
 		return flag;

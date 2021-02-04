@@ -39,8 +39,7 @@ public class DateTest {
 			
 //			어????? yyyy/MM/dd는 뭐임??
 			
-			
-			
+
 			
 			
 //			https://docs.oracle.com/javase/8/docs/api/
