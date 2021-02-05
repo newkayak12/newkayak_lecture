@@ -22,7 +22,7 @@ public class ScannerExample {
 				addr = sc.nextLine();
 				
 				System.out.println("\n name : " +  name +"\n age : " + age + "\n height : " + height + "\n weight : " + weight + "\n address : " + addr);
-				
+//			sc.close();	
 	}
 
 }
