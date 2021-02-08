@@ -13,7 +13,9 @@ public class StudentController {
 	//
 
 	public void mainMenu()	{
-		new Mainview().main(this);
+		dao.loadFile();
+		new Mainview().main(this);//new StudentController();
+		dao.saveFile();
 //		this.s = Mainview.stu;
 	}
 	

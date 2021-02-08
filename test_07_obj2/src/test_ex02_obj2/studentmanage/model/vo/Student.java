@@ -1,7 +1,13 @@
 package test_ex02_obj2.studentmanage.model.vo;
 
-public class Student {
+import java.io.Serializable;
+
+public class Student implements Serializable {
 	
+/**
+	 * 
+	 */
+	private static final long serialVersionUID = -9057098689500969351L;
 // 객체의 저장
  private String name, address, school;
  private int age, kor, eng, math, code;
