@@ -47,7 +47,7 @@ public class CalendarTest /* implements Runnable */ {
 		
 		System.out.println("\n"+year +"/"+ month+"/"+date+"   "+hour+":"+min+":"+sec);
 		
-		
+	System.out.println("calendar로 날짜 구해서  date로 바꿔서 simpledateFormat으로 넘기기 ");
 		Date day = new Date(c.getTimeInMillis());
 		SimpleDateFormat sdf = new SimpleDateFormat();
 //		우리가 주로 이렇게 쓸거라네...

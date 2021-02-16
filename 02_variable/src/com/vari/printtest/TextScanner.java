@@ -52,4 +52,6 @@ public class TextScanner {
 		 System.out.println((int) key);
 
 	}
+	
+
 }

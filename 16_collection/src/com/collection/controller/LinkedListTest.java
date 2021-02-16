@@ -24,9 +24,13 @@ public class LinkedListTest {
 		 	}
 		 	
 		 	System.out.println("\n\nfir/last\n");
+		 	System.out.println("get First");
 		 	System.out.println(linkList.getFirst());
+		 	System.out.println("get last");
 		 	System.out.println(linkList.getLast());
+		 	System.out.println("pop");
 		 	System.out.println(linkList.pop()); //신기방기하네여?
+		 	System.out.println("list show");
 		 	System.out.println(linkList);
 		 	
 		 	

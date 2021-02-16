@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
+import java.util.StringTokenizer;
 import java.util.TreeSet;
 
 import com.collection.model.vo.Fruits;
@@ -47,6 +48,14 @@ public class SetTest {
 //				StringTokenizer랑 완전 구조가 같은 편인데
 
 			}
+				System.out.println("\n\nStringTokenizer Example");
+			String tempor = "안/녕/하/세/요/키/키키/키키키";
+			StringTokenizer s1 = new StringTokenizer(tempor, "/");
+				while(s1.hasMoreTokens()) {
+					System.out.println(s1.nextToken());
+				}
+			
+			
 		
 		
 		System.out.println("\n\n중복값이 들어가니??\n");
@@ -161,7 +170,7 @@ public class SetTest {
 				
 				
 				
-				System.out.println("\n\n TreeSet");
+					System.out.println("\n\n TreeSet");
 				Iterator l2 = tset.iterator();
 				
 					while(l2.hasNext()) {
@@ -178,7 +187,7 @@ public class SetTest {
 					
 					
 					
-					
+					System.out.println("\n\n descending Treeset");
 				l2 = tset.descendingIterator();
 				
 					while(l2.hasNext()) {

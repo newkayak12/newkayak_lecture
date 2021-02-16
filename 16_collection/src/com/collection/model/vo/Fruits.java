@@ -33,9 +33,7 @@ public class Fruits implements Comparable<Fruits>{
 	
 	@Override
 	public boolean equals(Object obj) {
-			if(this == obj) {
-				
-			} else if(obj instanceof Fruits) {
+		 if(obj instanceof Fruits) {
 				Fruits  f= (Fruits) obj;
 				
 				if( ( name.equals(f.name)  && origin.equals(f.origin)  )&& ( (sugar== f.sugar) && (price == f.price)) ) {
@@ -51,7 +49,9 @@ public class Fruits implements Comparable<Fruits>{
 		// TODO Auto-generated method stub
 		return Objects.hash(name, origin, sugar, price);
 	}
-
+	
+	
+	
 	@Override
 	public int compareTo(Fruits o) {
 //		과일 이름으로 정렬

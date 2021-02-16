@@ -155,6 +155,12 @@ public class MapTest {
 		Set entrySet = map.entrySet();  //Map.Entry타입을 넘겨주고
 		Iterator entry = entrySet.iterator(); //Set에서 iterator // 넘긴건 Map.Entry
 		
+		
+		
+		
+		
+		
+		
 			while(entry.hasNext()) {
 				//set에 있는 것을 당겨오는 곳
 				Map.Entry e = (Map.Entry) entry.next(); //obj타입 그래서 Map.Entry에 들어갈 수 있네
@@ -181,6 +187,20 @@ public class MapTest {
 		System.out.println(c);
 
 				
+		
+		
+		
+		
+		System.out.println(" ********************************* 제네릭 사용");
+
+		Set<Map.Entry<Integer, Fruits>> lss = map.entrySet();
+		
+		Iterator<Map.Entry<Integer, Fruits>> ls2 = lss.iterator();
+			while(ls2.hasNext()) {
+				Map.Entry<Integer, Fruits> tempor = ls2.next();
+				System.out.println(tempor.getKey());
+				System.out.println(tempor.getValue());
+			}
 		
 		
 //		웹에서는 어떻게 쓸건가?
